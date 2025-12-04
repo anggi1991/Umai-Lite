@@ -160,8 +160,8 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
 **Status:** Properly Configured
 
 **Location:**
-- `app.json` - `extra.REVENUECAT_API_KEY`
-- `.env` - `EXPO_PUBLIC_REVENUECAT_API_KEY`
+- `app.json` - `extra.REVENUECAT_API_KEY` (redacted in public repo)
+- `.env` - `EXPO_PUBLIC_REVENUECAT_API_KEY` (not in public repo)
 - `src/services/revenueCatService.ts`
 
 **Current Config:**

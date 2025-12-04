@@ -94,7 +94,7 @@ curl -i --location --request POST 'https://gbcxzkgzhylpbmzbymwj.supabase.co/func
 **Cause:** AZURE_OPENAI_ENDPOINT contains full URL with path instead of base URL
 **Fix:** Update secret to base URL only:
 ```bash
-supabase secrets set AZURE_OPENAI_ENDPOINT=https://artco-mem1xkia-eastus2.cognitiveservices.azure.com
+supabase secrets set AZURE_OPENAI_ENDPOINT=https://your-resource.cognitiveservices.azure.com
 ```
 
 #### 2. "Azure config missing" Error

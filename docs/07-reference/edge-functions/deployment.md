@@ -65,9 +65,9 @@ SIMULATE_OPENAI=1
 
 ### Via CLI (Alternative):
 ```bash
-supabase secrets set AZURE_OPENAI_ENDPOINT=https://artco-mem1xkia-eastus2.cognitiveservices.azure.com --project-ref gbcxzkgzhylpbmzbymwj
-supabase secrets set AZURE_OPENAI_KEY=your_key_here --project-ref gbcxzkgzhylpbmzbymwj
-supabase secrets set AZURE_OPENAI_DEPLOYMENT=gpt-5-mini --project-ref gbcxzkgzhylpbmzbymwj
+supabase secrets set AZURE_OPENAI_ENDPOINT=https://your-resource.cognitiveservices.azure.com --project-ref your-project-id
+supabase secrets set AZURE_OPENAI_KEY=your_key_here --project-ref your-project-id
+supabase secrets set AZURE_OPENAI_DEPLOYMENT=gpt-5-mini --project-ref your-project-id
 ```
 
 ---
@@ -129,14 +129,14 @@ export const sendMessage = async (sessionId, message, childId) => {
 Jika ada perubahan code di Edge Functions:
 
 ```bash
-# Set access token
-export SUPABASE_ACCESS_TOKEN=sbp_7efe93bc17a05d7c4444f57adc2073de1808f8e1
+# Set access token (use your Supabase access token)
+export SUPABASE_ACCESS_TOKEN=your_access_token_here
 
 # Deploy generate-tip
-supabase functions deploy generate-tip --project-ref gbcxzkgzhylpbmzbymwj
+supabase functions deploy generate-tip --project-ref your-project-id
 
 # Deploy chat
-supabase functions deploy chat --project-ref gbcxzkgzhylpbmzbymwj
+supabase functions deploy chat --project-ref your-project-id
 ```
 
 ---
