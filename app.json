@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "scheme": "parentingai",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-5557591662770322~1178249678",
+          "iosAppId": "ca-app-pub-5557591662770322~1178249678"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true
+          }
+        }
+      ],
+      "@react-native-google-signin/google-signin"
+    ],
+    "name": "Umai - Your AI Parenting Assistant",
+    "slug": "parenting-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#CDE9F9"
+    },
+    "extra": {
+      "SUPABASE_URL": "https://gbcxzkgzhylpbmzbymwj.supabase.co",
+      "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdiY3h6a2d6aHlscGJtemJ5bXdqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzNjE0NDksImV4cCI6MjA3NzkzNzQ0OX0.ek2yBWmSese6_KzXJ6u4qbHHXr0NjUs0zWgN1VxcbcI",
+      "router": {},
+      "REVENUECAT_API_KEY": "goog_WhFwFkHaEMlpCpuGOuTGLrSZdTf",
+      "eas": {
+        "projectId": "37029595-3174-4cca-8d6c-81693e3a7716"
+      }
+    },
+    "android": {
+      "package": "com.razqashop.parentingai",
+      "versionCode": 8,
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#CDE9F9"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "com.google.android.gms.permission.AD_ID"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.razqashop.parentingai"
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/37029595-3174-4cca-8d6c-81693e3a7716"
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-5557591662770322~1178249678",
+    "ios_app_id": "ca-app-pub-5557591662770322~1178249678"
+  }
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+. "$(dirname "$0")/_/husky.sh"
+
+# Run docs structure guard before allowing commit
+npm run check:docs || {
+  echo "\n❌ Docs structure check failed. Fix issues before committing." >&2
+  exit 1
+}
+
+echo "✅ Docs structure check passed. Proceeding with commit."

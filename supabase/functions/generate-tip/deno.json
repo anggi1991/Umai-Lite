@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true
+  },
+  "lint": {
+    "files": {
+      "include": ["index.ts", "test_local.ts"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["index.ts", "test_local.ts"]
+    }
+  }
+}

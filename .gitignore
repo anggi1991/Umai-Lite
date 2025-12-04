@@ -1,0 +1,74 @@
+# Expo / Node
+node_modules/
+/.expo/
+/.expo-shared/
+dist/
+build/
+*.log
+
+
+
+# macOS
+.DS_Store
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# ========================================
+# Environment Variables - CRITICAL
+# ========================================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# ========================================
+# Credentials and Secrets
+# ========================================
+credentials.json
+credentials/
+client_secret_*.json
+google-services.json.backup*
+azure-assistant-form-data.json
+*.secret
+*.secrets.json
+secrets/
+
+# Keep templates safe
+!.env.example
+!google-services.example.json
+
+# typescript
+*.tsbuildinfo
+
+app-example

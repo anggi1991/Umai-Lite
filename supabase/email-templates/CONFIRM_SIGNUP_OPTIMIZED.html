@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Parenting AI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #CDE9F9 0%, #F9DDEB 100%); padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #CDE9F9 0%, #F9DDEB 100%); padding: 40px 20px; text-align: center; }
+        .mascot { width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.15); animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .content { padding: 40px 30px; color: #333; }
+        h1 { color: #5BA8D4; font-size: 28px; margin-bottom: 10px; }
+        p { line-height: 1.6; margin-bottom: 20px; color: #666; font-size: 16px; }
+        .cta-button { display: inline-block; background: linear-gradient(135deg, #5BA8D4, #E89ABE); color: white; padding: 14px 32px; border-radius: 25px; text-decoration: none; font-weight: bold; margin: 20px 0; transition: transform 0.2s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        .features { background: #F8FBFD; padding: 20px; border-radius: 12px; margin: 20px 0; }
+        .feature { margin: 12px 0; padding-left: 24px; position: relative; }
+        .feature:before { content: "✓"; position: absolute; left: 0; color: #5BA8D4; font-weight: bold; font-size: 18px; }
+        .footer { background: #F8F9FA; padding: 20px; text-align: center; color: #999; font-size: 14px; }
+        .footer a { color: #5BA8D4; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="data:image/png;base64,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" alt="Baby Buddy Mascot" class="mascot">
+            <h1>Welcome to Parenting AI! 🎉</h1>
+            <p style="color: #666; font-size: 18px;">Your AI-powered parenting companion</p>
+        </div>
+        
+        <div class="content">
+            <p>Hi there! 👋</p>
+            
+            <p>Thank you for joining <strong>Parenting AI</strong> – your friendly AI assistant for all things parenting! We're so excited to support you on this amazing journey.</p>
+            
+            <center>
+                <a href="{{ .ConfirmationURL }}" class="cta-button">Confirm Your Email</a>
+            </center>
+            
+            <div class="features">
+                <p style="font-weight: bold; margin-bottom: 15px; color: #5BA8D4;">🌟 What's inside for you:</p>
+                <div class="feature">AI-powered parenting advice 24/7</div>
+                <div class="feature">Track your baby's growth & milestones</div>
+                <div class="feature">Smart feeding & sleep schedules</div>
+                <div class="feature">Personalized tips based on your child's age</div>
+                <div class="feature">Safe, empathetic, & evidence-based guidance</div>
+            </div>
+            
+            <p>If you didn't request this email, you can safely ignore it.</p>
+            
+            <p style="color: #999; font-size: 14px; margin-top: 30px;">
+                <strong>Note:</strong> This confirmation link will expire in 24 hours.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>Made with ❤️ by the Parenting AI Team</p>
+            <p style="margin-top: 10px;">
+                <a href="https://yourapp.com/privacy">Privacy Policy</a> • 
+                <a href="https://yourapp.com/terms">Terms of Service</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 12px;">
+                © 2024 Parenting AI. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

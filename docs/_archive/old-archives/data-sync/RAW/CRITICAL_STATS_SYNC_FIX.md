@@ -1,0 +1,1 @@
+(Archived original removed from root – see consolidated CHANGELOG_DATA_SYNC.md for summary.)

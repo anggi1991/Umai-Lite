@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #2C3E50;
+      background-color: #F5F5F5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #FFFFFF;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(174, 225, 249, 0.3);
+    }
+    .header {
+      background: linear-gradient(135deg, #AEE1F9 0%, #FADADD 100%);
+      color: #2C3E50;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .header .mascot {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 15px auto;
+      display: block;
+      animation: wave 2s ease-in-out infinite;
+    }
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg) translateY(0); }
+      25% { transform: rotate(5deg) translateY(-5px); }
+      50% { transform: rotate(0deg) translateY(-8px); }
+      75% { transform: rotate(-5deg) translateY(-5px); }
+    }
+    .header h1 {
+      margin: 10px 0 0 0;
+      font-size: 28px;
+      font-weight: 700;
+      color: #2C3E50;
+    }
+    .content {
+      padding: 40px 30px;
+    }
+    .content h2 {
+      color: #AEE1F9;
+      font-size: 24px;
+      margin-top: 0;
+      font-weight: 700;
+    }
+    .content p {
+      font-size: 16px;
+      margin: 15px 0;
+      color: #2C3E50;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, #AEE1F9 0%, #FADADD 100%);
+      color: #2C3E50;
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 16px;
+      margin: 25px 0;
+      box-shadow: 0 6px 20px rgba(174, 225, 249, 0.4);
+      transition: all 0.3s;
+    }
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(174, 225, 249, 0.5);
+    }
+    .welcome-box {
+      background: linear-gradient(135deg, rgba(174, 225, 249, 0.1) 0%, rgba(250, 218, 221, 0.1) 100%);
+      border-left: 4px solid #AEE1F9;
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 8px;
+    }
+    .welcome-box ul {
+      margin: 10px 0;
+      padding-left: 25px;
+    }
+    .welcome-box li {
+      margin: 8px 0;
+    }
+    .footer {
+      background: linear-gradient(135deg, rgba(174, 225, 249, 0.1) 0%, rgba(250, 218, 221, 0.1) 100%);
+      padding: 30px;
+      text-align: center;
+      font-size: 13px;
+      color: #7F8C8D;
+    }
+    .footer a {
+      color: #AEE1F9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .alternative-link {
+      background-color: #F5F5F5;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: #7F8C8D;
+      word-break: break-all;
+      margin-top: 20px;
+      border: 1px dashed #E0E0E0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/path-to-mascot-image.png"" alt="Parenting AI Mascot" class="mascot">
+      <h1>Parenting AI</h1>
+      <p style="margin: 5px 0 0 0; font-size: 14px; color: #7F8C8D;">Teman Setia dalam Perjalanan Parenting Anda</p>
+    </div>
+    
+    <div class="content">
+      <h2>🎉 Selamat Datang di Parenting AI!</h2>
+      <p>Halo dan terima kasih telah bergabung dengan <strong>Parenting AI</strong>!</p>
+      <p>Kami sangat senang bisa membantu Anda dalam perjalanan mengasuh si kecil. Untuk memulai petualangan bersama Baby Buddy, silakan verifikasi alamat email Anda terlebih dahulu.</p>
+      
+      <div class="welcome-box">
+        <strong>✨ Yang akan Anda dapatkan:</strong>
+        <ul>
+          <li>💬 Chat dengan Baby Buddy AI untuk tips parenting</li>
+          <li>📊 Tracking pertumbuhan dan perkembangan anak</li>
+          <li>📸 Album foto dan milestone memories</li>
+          <li>⏰ Reminder untuk aktivitas penting</li>
+          <li>📈 Analisis statistik pertumbuhan</li>
+        </ul>
+      </div>
+      
+      <p style="text-align: center;">
+        <a href="{{ .ConfirmationURL }}" class="button">✅ Verifikasi Email Saya</a>
+      </p>
+      
+      <p style="font-size: 14px; color: #7F8C8D; margin-top: 30px;">
+        <strong>Penting:</strong> Link verifikasi ini akan kedaluwarsa dalam 24 jam. Jika Anda tidak mendaftar di Parenting AI, abaikan email ini.
+      </p>
+      
+      <div class="alternative-link">
+        <p style="margin: 0 0 10px 0; font-size: 13px;"><strong>Atau copy link berikut ke browser Anda:</strong></p>
+        {{ .ConfirmationURL }}
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p style="margin: 5px 0;"><strong>Parenting AI</strong> - Asisten Pintar untuk Orang Tua Modern</p>
+      <p style="margin: 5px 0;">
+        <a href="{{ .SiteURL }}">Website</a> | 
+        <a href="{{ .SiteURL }}/privacy-policy">Kebijakan Privasi</a> | 
+        <a href="{{ .SiteURL }}/terms">Syarat & Ketentuan</a>
+      </p>
+      <p style="margin: 15px 0 5px 0; font-size: 12px; color: #95A5A6;">
+        © 2025 Parenting AI. Hak Cipta Dilindungi.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

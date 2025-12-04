@@ -1,0 +1,48 @@
+# Manual Testing Guide
+
+Complete manual testing procedures and checklists for Parenting AI.
+
+**Last Updated:** November 2025  
+**Status:** ✅ Active
+
+---
+
+## Testing Checklist
+
+### Authentication
+- [ ] Email/password registration
+- [ ] Email/password login
+- [ ] Google Sign-In
+- [ ] Password reset flow
+- [ ] Email verification
+
+### Core Features
+- [ ] AI Chat (Azure OpenAI)
+- [ ] Growth Tracker (add/edit/view data)
+- [ ] Activities tracking
+- [ ] Photo gallery upload
+- [ ] Notifications (push/local)
+
+### UI/UX
+- [ ] Navigation flow
+- [ ] Theme switching (light/dark)
+- [ ] Language switching (EN/ID)
+- [ ] Responsive layouts
+- [ ] Loading states
+
+### Monetization
+- [ ] RevenueCat integration
+- [ ] Subscription flow
+- [ ] Ads display (AdMob)
+- [ ] Usage limits enforcement
+
+### Performance
+- [ ] App load time < 3s
+- [ ] Image optimization
+- [ ] Offline functionality
+- [ ] Error handling
+
+---
+
+**Source:** Consolidated from MANUAL_TESTING_*.md files
+
